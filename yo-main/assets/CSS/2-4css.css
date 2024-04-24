@@ -1,0 +1,26 @@
+.a{
+    padding:20px;
+    background-color:aquamarine;
+    border-radius:10px;
+}
+.a:hover{
+    background-color:antiquewhite;
+}
+.w{
+    padding:20px;
+    background-color:blueviolet;
+    border-radius:10px;
+    border:5px dotted;
+}
+.w:hover{
+    background-color:aliceblue;
+}
+.m{
+    padding:20px;
+    background-color:orange;
+    border-radius:10px;
+    border:3px dashed;
+}
+.m:hover{
+    background-color:chartreuse;
+}

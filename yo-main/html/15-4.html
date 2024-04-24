@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .calculator {
+      width: 300px;
+      margin: 0 auto;
+      padding: 25px;
+      border:2px solid black;
+      border-radius: 10px;
+      background-color: chartreuse;
+      
+    }
+
+    .calculator input {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border:2px solid black;
+    }
+
+    .calculator button {
+      width: 10%;
+      padding: 25px;
+      margin-bottom: 10px;
+      border:2px solid black;
+      border-radius: 10px;
+    }
+    .calculator button:hover{
+        background-color:cadetblue;
+    }
+    .eq{
+        padding:20px;
+        margin-bottom: 10px;
+        background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+    <center>
+  <div class="calculator">
+    <h1>Calculator</h1>
+    <input type="text" id="display">
+    <button onclick="add(1)">1</button>
+    <button onclick="add(2)">2</button>
+    <button onclick="add(3)">3</button>
+
+    <button onclick="add(4)">4</button>
+    <button onclick="add(5)">5</button><br>
+    <button onclick="add(6)">6</button>
+
+    <button onclick="add(7)">7</button>
+    <button onclick="add(8)">8</button>
+    <button onclick="add(9)">9</button>
+    <button onclick="add(0)">0</button><br>
+
+    <button onclick="add('+')">+</button>
+    <button onclick="add('-')">-</button>
+    <button onclick="add('*')">*</button>
+    <button onclick="add('.')">.</button>
+    <button onclick="add('/')">/</button>
+    <br>
+    <button class="eq" onclick="calculate()">=</button>
+    
+    <button onclick="clearDisplay()" id="c">C</button>
+  </div>
+    </center>
+  <script>
+    function add(value) {
+      var display = document.getElementById("display");
+      display.value += value;
+    }
+    function clearDisplay() {
+        var display = document.getElementById("display");
+        display.value = "";
+}
+
+    function calculate() {
+      var display = document.getElementById("display");
+      var result = eval(display.value);
+      display.value = result;
+    }
+  </script>
+</body>
+</html>

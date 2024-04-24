@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="2-4css.css">
+</head>
+<body>
+    <button class="a" onclick="cart++ ;
+    document.querySelector('#cart-summary').innerText=`Your bag has ${cart} items`;">🛒Add to cart</button>
+    <button class="w" onclick="cart-- ;
+    document.querySelector('#cart-summary').innerText=`Your bag has ${cart} items`;">💕Move to wishlist</button>    
+    <button class="m" onclick="cart+=2 ;
+    document.querySelector('#cart-summary').innerText=`Your bag has ${cart} items`;">💥Add 1+1 to cart</button>
+    <h2 id="cart-summary"></h2>
+    <script src="2-4js.js"></script>
+</body>
+</html>
